@@ -22,7 +22,18 @@ body{
 }
 .flex__container .col{flex-direction: column;}
 .flex__container > .row{flex-direction: row;}
-.flex__container > .row > header{background-color: red;}
+.flex__container > .row > header{
+    background-color: var(--c1-2); padding: 20px;
+    border-bottom-left-radius: var(--def-borderRadius); border-top-left-radius: var(--def-borderRadius);
+}
+.flex__container > .row > div{
+    padding: 20px; border-radius: var(--def-borderRadius);
+}
+
+/* card types */
+.card__normal{
+    box-shadow: var(--def-boxShadow);
+}
 
 /* make scroll x */
 .scroll-box-x{
