@@ -7,7 +7,7 @@ const nikkaFunc = {
     makeHeaderCard : function(data,con){
         const header = document.createElement("header");
         header.innerHTML = data;
-        con.append();
+        con.append(header);
     }
 };
 
