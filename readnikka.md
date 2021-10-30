@@ -10,6 +10,6 @@
 
 * ## css layouts
 
-### scroll-x
+### scroll-x 
     make scroll by direction of x
 

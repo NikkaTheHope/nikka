@@ -3,6 +3,9 @@ const nikkaFunc = {
         arr.forEach( str => {
             con.classList.add(str);
         });
+    },
+    makeNormalCard : function(){
+        
     }
 };
 
