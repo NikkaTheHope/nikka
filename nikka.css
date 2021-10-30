@@ -21,7 +21,8 @@ body{
     display: flex;    flex-direction: column;   align-items: center;
 }
 .flex__container .col{flex-direction: column;}
-.flex__container .row{flex-direction: row;}
+.flex__container > .row{flex-direction: row;}
+.flex__container > .row > header{background-color: red;}
 
 /* make scroll x */
 .scroll-box-x{
