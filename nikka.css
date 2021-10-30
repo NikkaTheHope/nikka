@@ -17,6 +17,10 @@ body{
     padding: 20px;
 }
 
+.flex__container{
+    display: flex;    flex-direction: column;   align-items: center;
+}
+
 /* make scroll x */
 .scroll-box-x{
     overflow-x: auto;
