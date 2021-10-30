@@ -4,8 +4,10 @@ const nikkaFunc = {
             con.classList.add(str);
         });
     },
-    makeNormalCard : function(){
-        
+    makeHeaderCard : function(data,con){
+        const header = document.createElement("header");
+        header.innerHTML = data;
+        con.append();
     }
 };
 
