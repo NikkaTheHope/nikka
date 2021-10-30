@@ -7,4 +7,4 @@ menus.forEach( menu=> {
     nav.append(div);
 });
 
-body.append(div);
+body.append(nav);
