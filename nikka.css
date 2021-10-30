@@ -32,7 +32,7 @@ body{
 
 /* card types */
 .card__normal{
-    box-shadow: var(--def-boxShadow);
+    box-shadow: var(--def-boxShadow);   border-radius: var(--def-borderRadius);
 }
 
 /* make scroll x */
