@@ -49,3 +49,7 @@ body{
     border-radius: var(--def-borderRadius);
     box-shadow:  var(--def-boxShadow);
 }
+
+.btn:active{
+    transform: scale(0.89);
+}
