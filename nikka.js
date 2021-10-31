@@ -16,6 +16,25 @@ const nikkaFunc = {
         if(bool){
             div.classList.add("card__normal");
         }
+    },
+    makeBtnShow : function(arr, btn, type){
+        Array.from(arr).filter( i => {
+            if(i !== btn){
+                if(type === "display"){
+                    if(i.style.display === "none"){
+                        i.style.display = "block";
+                    }else{
+                        i.style.display = "none";
+                    }
+                }else{
+                    if(i.style.visibility === "hidden"){
+                        i.style.visibility = "visible";
+                    }else{
+                        i.style.visibility = "hidden";
+                    }
+                }
+            }
+        })
     }
 };
 
