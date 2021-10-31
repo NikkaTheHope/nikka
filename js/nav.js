@@ -1,9 +1,13 @@
+
 const nav = document.createElement("div");
-nikkaFunc.makeClasses(["flex__container","card__normal","row"],nav);
 const header = document.createElement("header");
+
+
+nikkaFunc.makeClasses(["flex__container","card__normal","row"],nav);
 header.innerText = "HEADER";
-header.addEventListener("click",function(){nikkaFunc.makeBtnShow(nav.children,header,"display");});
+
 nav.append(header);
+body.append(nav);
 
 const archive = {
     indexNav : {
@@ -12,45 +16,76 @@ const archive = {
             name : "Study"
         },
         menu_02 : {
-            id : '002',
+            id : 'studyNav',
             name : "menu 02"
         },
         menu_03 : {
-            id : '003',
+            id : 'studyNav',
             name : "menu 03"
         }
     },
     studyNav : {
         javascript : {
             id : '001_001',
-            name : 'Javascript | 자바스크립트'
+            name : 'Javascript | 자바스크립트',
+            content_url : ""
         },
         linux : {
             id : '001_002',
-            name : 'Linux | 리눅스'
+            name : 'Linux | 리눅스',
+            content_url : ""
         }
     }
 };
 
 const initNavs = {
-    navMain : function(){
-        const arr = [];
-        Object.keys(archive.indexNav).forEach( i => {
-            const div = document.createElement("div");
-            div.innerText = archive.indexNav[i].name;
-            nikkaFunc.makeClasses(["btn"],div);
-            nav.append(div);
-            arr.push(div);
-            div.addEventListener("click",this[archive.indexNav[i].id]);
-        });
-        body.append(nav);
-        return arr;
+    home : function(){
+
     },
-    studyNav : function(){
-        const arr = [];
-        console.log("aaaa");
+    draw : function(obj){
+        Object.keys(archive[obj]).forEach( key => {
+            const div = document.createElement("div");
+            div.innerText = archive[obj][key].name;
+            div.menu = obj;
+            div.id = archive[obj][key].id;
+            nikkaFunc.makeClasses(["btn",obj],div);
+            nav.append(div);
+            div.addEventListener("click",archiveClicked);
+        });
+    },
+    show : function(){
+
+    },
+    navMain : function(bool){
+        if(!bool){
+            initNavs.draw("indexNav");
+        }else{
+
+        }
+    },
+    studyNav : function(bool){
+        if(!bool){
+            initNavs.draw("studyNav");
+        }else{
+
+        }
     }
 };
 
-const navMain = initNavs.navMain();
-console.log(navMain);
+function archiveClicked(e){
+    const current_menus = document.getElementsByClassName(e.target.menu);
+    Array.from(current_menus).forEach( cur => {
+        cur.style.display = "none";
+    });
+
+    const need_menus = document.getElementsByClassName(e.target.id);
+    if(need_menus.length > 0){
+        Array.from(need_menus).forEach( need => {
+            need.style.display = "initial";
+        });
+    }else{
+        initNavs.studyNav(false);
+    }
+}
+
+initNavs.navMain(false);
