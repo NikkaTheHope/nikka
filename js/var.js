@@ -1,3 +1,19 @@
 //Load menus from DB
-const menus = ["MENU 01","MENU 02","MENU 03"];
+const archive = {
+    STUDY : {
+        alt : "Study",
+        list : {
+            js : {
+                name : 'javascript'
+            },
+            linux : {
+                name : 'linux'
+            }
+        }
+    },
+    MENU02 :{
+
+    }
+};
+
 const home_addr = "https://nikkathehope.github.io/nikka/";

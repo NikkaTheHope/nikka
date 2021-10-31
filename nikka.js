@@ -4,19 +4,6 @@ const nikkaFunc = {
             con.classList.add(str);
         });
     },
-    makeHeaderCard : function(data,con){
-        const header = document.createElement("header");
-        header.innerHTML = data;
-        con.append(header);
-    },
-    makeDivContent : function(data,obj,bool){
-        const div = document.createElement("div");
-        div.innerText = data;
-        obj.append(div);
-        if(bool){
-            div.classList.add("card__normal");
-        }
-    },
     makeBtnShow : function(arr, btn, type){
         Array.from(arr).filter( i => {
             if(i !== btn){
