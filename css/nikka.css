@@ -14,7 +14,6 @@ body{
     background-color: var(--base-bg);
     color: var(--base-c);
     padding: 25px;
-    width:100%;
 }
 
 .flex_container{
@@ -43,13 +42,22 @@ body{
     overflow-x: auto;
     white-space: nowrap;
     border-radius: 15px;
+    width:100%;
 }
 .nav::-webkit-scrollbar-thumb{
     background-color: var(--base-c);
     border-radius: 15px;
-    box-shadow:  var(--box-shadow);
 }
 .nav::-webkit-scrollbar{
-    background-color: var(--base-bg);
+    background-color: var(--base-c1);
     border-radius: 15px;
+}
+
+#content{
+    margin-top: 15px;
+    border-radius: 15px;
+    padding-left : 20px;    padding-right : 20px;
+    padding-top : 5px;      padding-bottom : 5px;
+    border: solid var(--base-c) 3px;
+    width: 100%;
 }
