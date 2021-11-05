@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+:root{
+    --box-shadow:  0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Wood & Paper */
+    --base-c2 : rgba(112,84,70,1) ;     /* Tan */
+    --base-c1 : rgba(225,195,145,1) ;   /* Beige */
+    --base-bg : rgba(253,244,227,1) ;   /* Cream */
+    --base-c : rgba(60,52,49,1) ;      /* Ebony */
+}
+
+body{
+    font-family: 'Do Hyeon', sans-serif;
+    background-color: var(--base-bg);
+    color: var(--base-c);
+    padding: 25px;
+    width:100%;
+}
+
+.flex_container{
+    display: flex;
+    align-items: center;
+}
+.f_col{
+    flex-direction: column;
+}
+.f_row{
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav_bt{
+    padding:15px;
+    margin-left: 6px;margin-right: 6px; margin-bottom: 10px;
+    box-shadow:  var(--box-shadow);
+    border-radius: 30px;
+}
+.nav_bt:active{
+    transform: scale(0.89);
+}
+
+.nav{
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 15px;
+}
+.nav::-webkit-scrollbar-thumb{
+    background-color: var(--base-c);
+    border-radius: 15px;
+    box-shadow:  var(--box-shadow);
+}
+.nav::-webkit-scrollbar{
+    background-color: var(--base-bg);
+    border-radius: 15px;
+}
