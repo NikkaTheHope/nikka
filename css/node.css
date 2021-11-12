@@ -1,0 +1,31 @@
+body{
+    background-color: aqua;
+}
+
+.flex_container{
+    display: flex;
+    align-items: center;
+}
+.f_row{
+    flex-direction: row;
+}
+.f_col{
+    flex-direction: column;
+}
+
+#nav{
+    border-radius: 15px;
+    border:solid black 1px;
+    padding:10px;
+}
+
+#content > .bt{
+    border-radius: 15px;
+    border:solid blue 1px;
+    padding:10px;
+}
+#content > .con{
+    border-radius: 15px;
+    border:solid red 1px;
+    padding:10px;
+}
