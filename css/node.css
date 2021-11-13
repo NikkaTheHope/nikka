@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+:root{
+    --box-shadow:  0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* Wood & Paper */
+    --base-c2 : rgba(112,84,70,1) ;     /* Tan */
+    --base-c1 : rgba(225,195,145,1) ;   /* Beige */
+    --base-bg : rgba(253,244,227,1) ;   /* Cream */
+    --base-c : rgba(60,52,49,1) ;      /* Ebony */
+}
+
 body{
-    background-color: aqua;
+    font-family: 'Stylish', sans-serif;
+    background-color: var(--base-bg);
+    color: var(--base-c);
+    padding: 25px;
+    font-size: large;
 }
 
 .flex_container{
@@ -17,6 +33,19 @@ body{
     border-radius: 15px;
     border:solid black 1px;
     padding:10px;
+}
+
+.card{
+    padding : 10px;
+    box-shadow:  var(--box-shadow);
+}
+
+.subject{
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.subject:active{
+    transform: scale(0.91);
 }
 
 #content > .bt{
