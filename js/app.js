@@ -8,6 +8,10 @@ const bts = {
     vjs : {
         title:"VanillaJS - ETC Informations",
         url:"http://raywkd.cafe24.com:8881"
+    },
+    purchaselist : {
+        title:"Google Sites - purchase list",
+        url:"https://sites.google.com/view/nikkapurchaselist/cloth"
     }
 };
 
