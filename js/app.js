@@ -1,20 +1,22 @@
-menus.forEach(menu=>{
-    const data = createNavBt(menu)
-    data.addEventListener("click", changeContent);
-    nav.appendChild(data);
-});
-body.appendChild(nav);
+const body = document.querySelector("body");
 
-body.appendChild(content);
+const bts = {
+    express : {
+        title:"Express(NodeJS) - Excel/SpreadSheet, Notion, Express",
+        url:"http://raywkd.cafe24.com:3000"
+    },
+    vjs : {
+        title:"VanillaJS - ETC Informations",
+        url:"http://raywkd.cafe24.com:8881"
+    }
+};
 
-function createNavBt(str){
+Object.keys(bts).forEach(e=>{
     const div = document.createElement("div");
-    vjs.addclasses(["nav_bt"],div);
-    div.style.border = "solid var(--base-c ) 3px";
-    div.innerText = str;
-    return div;
-}
-
-function changeContent(e){
-    content.innerText = e.target.innerText;
-}
+    div.addEventListener("click", function(){
+        window.location.href=bts[e].url;
+    });
+    div.innerText = bts[e].title;
+    div.classList.add("links")
+    body.append(div);
+});

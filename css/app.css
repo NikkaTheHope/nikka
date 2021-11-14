@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+}
+.links{
+    background-color: rgb(97, 170, 63);
+    color: rgb(226, 205, 136);
+    font-family: 'Jua', sans-serif;
+    text-decoration: none;
+    font-size: xx-large;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.links:active{
+    transform: scale(0.89);
+}
