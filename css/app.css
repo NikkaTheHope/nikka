@@ -1,0 +1,49 @@
+body{
+    background-color: #5e5959;
+    color: white;
+    font-size: 15pt;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.link-card{
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #564f4f, #665e5e);
+    box-shadow:  -20px 20px 40px #514b4b,
+             20px -20px 40px #6d6565;
+}
+.link-card a{
+    padding-left: 25px;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 15px;
+}
+@keyframes ani_a {
+    0%   {
+        background: rgb(94,89,89);
+        background: linear-gradient(90deg, rgba(94,89,89,1) 0%, rgba(192,96,96,1) 27%, rgba(140,92,94,1) 72%, rgba(201,202,202,1) 100%);}
+    25%  {
+        background: rgb(94,89,89);
+        background: linear-gradient(0deg, rgba(94,89,89,1) 0%, rgba(192,96,96,1) 27%, rgba(140,92,94,1) 72%, rgba(201,202,202,1) 100%);
+    }
+    50%  {
+        background: rgb(94,89,89);
+        background: linear-gradient(169deg, rgba(94,89,89,1) 0%, rgba(192,96,96,1) 27%, rgba(140,92,94,1) 72%, rgba(201,202,202,1) 100%);
+    }
+    100% {
+        background: rgb(94,89,89);
+        background: linear-gradient(233deg, rgba(94,89,89,1) 0%, rgba(192,96,96,1) 27%, rgba(140,92,94,1) 72%, rgba(201,202,202,1) 100%);
+    }
+  }
+.link-card a:hover{
+    animation-name: ani_a;
+    animation-duration: 4s;
+}
+.link-card a:active{
+    transform: scale(0.89);
+}
